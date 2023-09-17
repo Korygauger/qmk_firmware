@@ -74,11 +74,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Game Layers
 // Base Game Layout great for destiny
 [_GAME] = LAYOUT(
-  KC_ESC,   KC_F1,   KC_1,    KC_2,    KC_3,    KC_4,                     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_MINS,
-  KC_T,   KC_TAB,   KC_Q,    KC_W,    KC_E,    KC_R,                     KC_Y,  KC_BTN5, KC_MS_U, KC_BTN4,    KC_P,  KC_EQL,
-  KC_G,   KC_LSFT,   KC_A,    KC_S,    KC_D,    KC_F,                     KC_H, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2,  KC_QUOT,
-  KC_B,  KC_LCTL,   KC_Z,    KC_X,    KC_C,    KC_V, _______,     _______,KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_ENT,
-            KC_M,   KC_O, MO(_NAV), KC_LALT, KC_SPC,                TG(_GAME),  KC_BTN1, LALT(KC_F4), KC_F12, KC_F11
+  KC_ESC,   KC_F1,   KC_1,     KC_2,    KC_3,   KC_4,                          KC_6,        KC_7,    KC_8,    KC_9,    KC_0,  KC_MINS,
+    KC_T,  KC_TAB,   KC_Q,     KC_W,    KC_E,   KC_R,                          KC_Y,     KC_BTN5, KC_MS_U, KC_BTN4,    KC_P,  KC_EQL,
+    KC_G, KC_LSFT,   KC_A,     KC_S,    KC_D,   KC_F,                          KC_H,     KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2,  KC_QUOT,
+    KC_B, KC_LCTL,   KC_Z,     KC_X,    KC_C,   KC_V, _______,     _______,    KC_N,        KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_ENT,
+                     KC_M,   KC_O, MO(_NAV), KC_LALT, KC_SPC,    TG(_GAME), KC_BTN1, LALT(KC_F4),  KC_F12,  KC_F11
 ),
 /* Navigation
  * ,----------------------------------------.                     ,-----------------------------------------.
@@ -95,11 +95,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *            `----------------------------------'           '------''---------------------------'
  */
 [_NAV] = LAYOUT(
-  LCA(KC_DEL),     KC_F1,    KC_F2,    KC_F3,    KC_F4,   KC_F5,                              KC_F6,         KC_F7,         KC_F8,         KC_F9,        KC_F10,  KC_F11,
-  RCS(KC_ESC),    _______,KC_CTLTAB,  KC_UP, KC_ALTAB, KC_CAPS,                          LGUI(KC_I),     KC_PRVWD,     LGUI(KC_UP),      KC_NXTWD,   LALT(KC_F4),  KC_F12,
-      _______,    KC_LSFT,  KC_LEFT,  KC_DOWN,  KC_RGHT, KC_HOME,                          KC_PAGE_UP,   LGUI(KC_LEFT), LGUI(KC_DOWN), LGUI(KC_RGHT),       KC_LSFT, _______,
-      _______,    KC_UNDO,   KC_CUT,  KC_COPY,    KC_PSTE, KC_END, _______,      _______, KC_PAGE_DOWN,       KC_MPRV,       KC_MPLY,       KC_MNXT, LCTL(KC_SLSH), _______,
-                            MO(_SYM), KC_SLEP, _______, LGUI(KC_L), _______,            KC_TAB, KC_DLINE, LCTL(KC_LSFT),       KC_LSFT,       KC_LGUI
+  LCA(KC_DEL),         KC_F1,     KC_F2,    KC_F3,    KC_F4,   KC_F5,                                  KC_F6,         KC_F7,         KC_F8,         KC_F9,        KC_F10,  KC_F11,
+  RCS(KC_ESC), LCTL(KC_LALT), KC_CTLTAB,    KC_UP, KC_ALTAB, KC_CAPS,                             LGUI(KC_I),      KC_PRVWD,   LGUI(KC_UP),      KC_NXTWD,   LALT(KC_F4),  KC_F12,
+      _______,       KC_LSFT,   KC_LEFT,  KC_DOWN,  KC_RGHT, KC_HOME,                             KC_PAGE_UP, LGUI(KC_LEFT), LGUI(KC_DOWN), LGUI(KC_RGHT),       KC_LSFT, _______,
+      _______,       KC_UNDO,    KC_CUT,  KC_COPY,  KC_PSTE,  KC_END, _______,         _______, KC_PAGE_DOWN,       KC_MPRV,       KC_MPLY,       KC_MNXT, LCTL(KC_SLSH), _______,
+                            MO(_SYM),  KC_SLEP,  _______, LGUI(KC_L), _______,          KC_TAB,     KC_DLINE, LCTL(KC_LSFT),       KC_LSFT,       KC_LGUI
 ),
 /* Symbols
  * ,-----------------------------------------.                    ,-----------------------------------------.
@@ -116,11 +116,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *            `----------------------------------'           '------''---------------------------'
  */
 [_SYM] = LAYOUT(
-  KC_GRV, KC_EXLM , KC_AT , KC_HASH , KC_DLR , KC_PERC,                           KC_CIRC,  KC_AMPR  , KC_ASTR, _______, _______ ,_______,
-  _______,  KC_HASH,  KC_SLSH,   KC_LBRC,  KC_RBRC, KC_PLUS,                        KC_PIPE, KC_LT,   KC_GT, KC_BSLS,KC_QUOT, _______,
-  _______, KC_AT,  KC_ASTR,  KC_LPRN,  KC_RPRN, KC_EQL,                       KC_AMPR,  KC_SCLN, KC_PDOT, KC_COMM,  KC_DQUO, KC_TILD,
-  _______,KC_DLR, KC_PERC, KC_LCBR, KC_RCBR, KC_MINS,  _______,       _______,  KC_QUES, KC_COLN, KC_EXLM, KC_UNDS,   KC_GRV, _______,
-                    KC_MUTE, _______, KC_BSPC, KC_SPC, MO(_NAV),       _______, KC_LSFT, KC_F6, KC_F7, KC_F8
+   KC_GRV,KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                          KC_CIRC, KC_AMPR, KC_ASTR, _______, _______, _______,
+  _______,KC_HASH, KC_SLSH, KC_LBRC, KC_RBRC, KC_PLUS,                          KC_PIPE,   KC_LT,   KC_GT, KC_BSLS, KC_QUOT, _______,
+  _______,  KC_AT, KC_ASTR, KC_LPRN, KC_RPRN,  KC_EQL,                          KC_AMPR, KC_SCLN, KC_PDOT, KC_COMM, KC_DQUO, KC_TILD,
+  _______, KC_DLR, KC_PERC, KC_LCBR, KC_RCBR, KC_MINS,  _______,       _______, KC_QUES, KC_COLN, KC_EXLM, KC_UNDS,  KC_GRV, _______,
+                    KC_MUTE, _______, KC_BSPC, KC_SPC, MO(_NAV),       _______, KC_LSFT,   KC_F6,   KC_F7,   KC_F8
 ),
 /* ADJUST  not correct
  * ,-----------------------------------------.                    ,-----------------------------------------.
