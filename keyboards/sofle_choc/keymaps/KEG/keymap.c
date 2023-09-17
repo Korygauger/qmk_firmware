@@ -75,10 +75,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Base Game Layout great for destiny
 [_GAME] = LAYOUT(
   KC_ESC,   KC_F1,   KC_1,    KC_2,    KC_3,    KC_4,                     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_MINS,
-  KC_T,   KC_TAB,   KC_Q,    KC_W,    KC_E,    KC_R,                     KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,  KC_EQL,
-  KC_G,   KC_LSFT,   KC_A,    KC_S,    KC_D,    KC_F,                     KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN,  KC_QUOT,
+  KC_T,   KC_TAB,   KC_Q,    KC_W,    KC_E,    KC_R,                     KC_Y,  KC_BTN5, KC_MS_U, KC_BTN4,    KC_P,  KC_EQL,
+  KC_G,   KC_LSFT,   KC_A,    KC_S,    KC_D,    KC_F,                     KC_H, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2,  KC_QUOT,
   KC_B,  KC_LCTL,   KC_Z,    KC_X,    KC_C,    KC_V, _______,     _______,KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_ENT,
-            KC_M,   KC_O, MO(_NAV), KC_LALT, KC_SPC,                TG(_GAME),  TT(_NUM), LALT(KC_F4), KC_F12, KC_F11
+            KC_M,   KC_O, MO(_NAV), KC_LALT, KC_SPC,                TG(_GAME),  KC_BTN1, LALT(KC_F4), KC_F12, KC_F11
 ),
 /* Navigation
  * ,----------------------------------------.                     ,-----------------------------------------.
