@@ -24,7 +24,7 @@ enum sofle_layers {
     _SYM,
     _ADJUST,
     _NUM,
-    _SDOKU,
+_SDOKU,
 };
 
 enum custom_keycodes {
@@ -344,7 +344,7 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [_NAV] =  { ENCODER_CCW_CW(KC_VOLU, KC_VOLD),   ENCODER_CCW_CW(KC_VOLU, KC_VOLD)  },
     [_ADJUST] = { ENCODER_CCW_CW(KC_MS_WH_RIGHT, KC_MS_WH_LEFT), ENCODER_CCW_CW(KC_MS_WH_DOWN, KC_MS_WH_UP) },
     [_NUM] =   { ENCODER_CCW_CW(KC_MS_WH_RIGHT, KC_MS_WH_LEFT), ENCODER_CCW_CW(KC_MS_WH_DOWN, KC_MS_WH_UP)  },
-    [_SDOKU] =   { ENCODER_CCW_CW(KC_VOLU, KC_VOLD), ENCODER_CCW_CW(KC_MS_WH_DOWN, KC_MS_WH_UP)  },
+[_SDOKU] =   { ENCODER_CCW_CW(KC_VOLU, KC_VOLD), ENCODER_CCW_CW(KC_MS_WH_DOWN, KC_MS_WH_UP)  },
 };
 #endif
 
@@ -458,7 +458,7 @@ static void print_status_narrow(void) {
             break;
         case _SDOKU:
             oled_write_ln_P(PSTR("SDoku"), false);
-            break;
+        break;
         default:
             oled_write_P(PSTR("???  "), false);
     }
@@ -488,7 +488,7 @@ bool oled_task_user(void) {
         print_status_narrow();
     } else {
         render_logo();
-    }
+            }
 
     return false;
 }
