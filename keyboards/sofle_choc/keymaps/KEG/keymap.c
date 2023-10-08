@@ -105,8 +105,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *            `----------------------------------'           '------''---------------------------'
  */
 [_NAV] = LAYOUT(
-  LCA(KC_DEL),         KC_F1,     KC_F2,    KC_F3,    KC_F4,   KC_F5,                                  KC_F6,         KC_F7,         KC_F8,         KC_F9,        KC_F10,  KC_F11,
-  RCS(KC_ESC), LCTL(KC_LALT), KC_CTLTAB,    KC_UP, KC_ALTAB, KC_CAPS,                             LGUI(KC_I),      KC_PRVWD,   LGUI(KC_UP),      KC_NXTWD,   LALT(KC_F4),  KC_F12,
+  LCA(KC_DEL),         KC_F1,     KC_F2,    KC_F3,    KC_F4,   KC_F5,                                  KC_F6,         KC_F7,         KC_F8,         KC_F9,        KC_F10,  LALT(KC_F4),
+  RCS(KC_ESC), LCTL(KC_LALT), KC_CTLTAB,    KC_UP, KC_ALTAB, KC_CAPS,                             LGUI(KC_I),      KC_PRVWD,   LGUI(KC_UP),      KC_NXTWD,   LCTL(KC_W),  KC_F12,
       _______,       KC_LSFT,   KC_LEFT,  KC_DOWN,  KC_RGHT, KC_HOME,                             KC_PAGE_UP, LGUI(KC_LEFT), LGUI(KC_DOWN), LGUI(KC_RGHT),       KC_LSFT, _______,
       _______,       KC_UNDO,    KC_CUT,  KC_COPY,  KC_PSTE,  KC_END, _______,         _______, KC_PAGE_DOWN,       KC_MPRV,       KC_MPLY,       KC_MNXT, LCTL(KC_SLSH), _______,
                             MO(_SYM),  KC_SLEP,  _______, LGUI(KC_L), _______,          KC_TAB,     KC_DLINE, LCTL(KC_LSFT),       KC_LSFT,       KC_LGUI
