@@ -20,7 +20,7 @@
 #define MASTER_LEFT
 
 // Enabling this option changes the startup behavior to listen for an
-// active USB communication to delegate which part is master and which 
+// active USB communication to delegate which part is master and which
 // is slave. With this option enabled and theres’s USB communication,
 // then that half assumes it is the master, otherwise it assumes it
 // is the slave.
@@ -97,3 +97,5 @@
 // #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 
 //#endif                                                                        same with this one KEG
+
+#define PERMISSIVE_HOLD
