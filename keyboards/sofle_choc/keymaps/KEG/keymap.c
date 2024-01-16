@@ -128,7 +128,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_SYM] = LAYOUT(
    KC_GRV,KC_EXLM,           KC_AT,         KC_HASH,          KC_DLR, KC_PERC,                          KC_CIRC,         KC_AMPR,         KC_ASTR,         _______, _______, _______,
   _______,KC_HASH,         KC_SLSH,         KC_LBRC,         KC_RBRC, KC_PLUS,                          KC_PIPE,           KC_LT,           KC_GT,         KC_BSLS, KC_QUOT, _______,
-  _______,  LT(_QWERTY,KC_AT), LALT_T(KC_ASTR), LCTL_T(KC_LPRN), LSFT_T(KC_RPRN),  KC_EQL,                          KC_AMPR, RSFT_T(KC_SCLN), RCTL_T(KC_PDOT), RALT_T(KC_COMM), LT(_QWERTY,KC_DQUO), KC_TILD,
+  _______,  KC_AT,         KC_ASTR,         KC_LPRN,         KC_RPRN,  KC_EQL,                          KC_AMPR,         KC_SCLN,         KC_PDOT,         KC_COMM, KC_DQUO, KC_TILD,
   _______, KC_DLR,         KC_PERC,         KC_LCBR,         KC_RCBR, KC_MINS,  _______,       _______, KC_QUES,         KC_COLN,         KC_EXLM,         KC_UNDS,  KC_GRV, _______,
                            KC_MUTE,         _______,         KC_BSPC,  KC_SPC, MO(_NAV),       _______, KC_LSFT,           KC_F6,           KC_F7,           KC_F8
 ),
@@ -155,11 +155,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_NUM] = LAYOUT(
-    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                       XXXXXXX, XXXXXXX, KC_PSLS, KC_PAST, XXXXXXX, XXXXXXX,
-    XXXXXXX, XXXXXXX, KC_BTN4, KC_MS_U, KC_BTN5, XXXXXXX,                       XXXXXXX, KC_P7, KC_P8, KC_P9, KC_PEQL, XXXXXXX,
-    KC_ACL0, KC_BTN3, KC_MS_L, KC_MS_D, KC_MS_R, XXXXXXX,                       KC_LPRN,KC_P4, KC_P5, KC_P6, KC_PPLS, KC_BSPC,
-    KC_ACL1, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     XXXXXXX, KC_RPRN, KC_P1, KC_P2, KC_P3, KC_PMNS, KC_PENT,
-                      _______, _______, _______, KC_BTN2, KC_BTN1,     _______, _______, KC_PDOT, KC_P0, KC_PCMM
+    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                       XXXXXXX, XXXXXXX, KC_PSLS, KC_ASTR, XXXXXXX, XXXXXXX,
+    XXXXXXX, XXXXXXX, KC_BTN4, KC_MS_U, KC_BTN5, XXXXXXX,                       XXXXXXX, KC_7, KC_8, KC_9, KC_EQL, XXXXXXX,
+    KC_ACL0, KC_BTN3, KC_MS_L, KC_MS_D, KC_MS_R, XXXXXXX,                       KC_LPRN,KC_4, KC_5, KC_6, KC_PLUS, KC_BSPC,
+    KC_ACL1, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     XXXXXXX, KC_RPRN, KC_1, KC_2, KC_3, KC_MINS, KC_ENT,
+                      _______, _______, _______, KC_BTN2, KC_BTN1,     _______, _______, KC_DOT, KC_0, KC_COMM
 ),
 
 [_SDOKU] = LAYOUT(
