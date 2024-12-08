@@ -105,7 +105,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_GRV,KC_1,            KC_2,            KC_3,            KC_4,    KC_5,                             KC_6,            KC_7,              KC_8,          KC_9,    KC_0,    _______,
         KC_LALT,KC_HASH,         KC_SLSH,         KC_LBRC,         KC_RBRC, KC_PLUS,                          KC_PIPE,           KC_LT,           KC_GT,         KC_BSLS, KC_QUOT, KC_CIRC,
         KC_LCTL,  KC_AT,         KC_ASTR,         KC_LPRN,         KC_RPRN,  KC_EQL,                          KC_AMPR,         KC_SCLN,         KC_PDOT,         KC_COMM, KC_DQUO, KC_TILD,
-        MO(_GAME), KC_DLR,         KC_PERC,         KC_LCBR,         KC_RCBR, KC_MINS,  _______,       _______, KC_QUES,         KC_COLN,         KC_EXLM,         KC_UNDS,  KC_GRV, _______,
+        KC_LSFT, KC_DLR,         KC_PERC,         KC_LCBR,         KC_RCBR, KC_MINS,  _______,       _______, KC_QUES,         KC_COLN,         KC_EXLM,         KC_UNDS,  KC_GRV, _______,
                                  KC_MUTE,         _______,         KC_BSPC,  KC_SPC, MO(_NAV),       _______, KC_LSFT,           KC_F6,           KC_F7,           KC_F8
         ),
 
